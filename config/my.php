@@ -5,11 +5,11 @@ $config->requestType  = 'GET';
 $config->requestFix   = '-';
 $config->webRoot      = '/'; 
 
-$config->db->host     = 'localhost';
+$config->db->host     = getenv("MYSQL_HOST");
 $config->db->port     = '3306';
 $config->db->name     = 'demo'; 
 $config->db->user     = 'root'; 
-$config->db->password = '';
+$config->db->password = getenv("MYSQL_PWD");
 
 /* 如果需要配置主从数据库，取消注释即可。To use master and slave database feature, uncomment this. */
 
