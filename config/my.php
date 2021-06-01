@@ -1,13 +1,13 @@
 <?php
 $config->installed    = true;  
 $config->debug        = true;  
-$config->requestType  = 'GET';
+$config->requestType  = 'PATH_INFO';
 $config->requestFix   = '-';
 $config->webRoot      = '/'; 
 
 $config->db->host     = getenv("MYSQL_HOST");
 $config->db->port     = '3306';
-$config->db->name     = 'demo'; 
+$config->db->name     = 'blog'; 
 $config->db->user     = 'root'; 
 $config->db->password = getenv("MYSQL_PWD");
 
